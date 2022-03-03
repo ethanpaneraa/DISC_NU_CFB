@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="DISC CFB Calculator">
         <p>
-          hi Welcome to the CFB Environmental Calculator. We are DISC NU.
+          Welcome to the CFB Environmental Calculator. We are DISC NU.
         </p>
         <p> New Input! the number of materials you want to donate! Calculate your impact today!</p>
         

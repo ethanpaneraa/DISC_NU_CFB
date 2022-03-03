@@ -6,7 +6,11 @@ function App() {
     <div className="App">
       <header className="DISC CFB Calculator">
         <p>
+<<<<<<< HEAD
           Welcome to the CFB Environmental Calculator. We are DISC NU.
+=======
+          hi hey Welcome to the CFB Environmental Calculator. We are DISC NU.
+>>>>>>> f1f064bc61e461771e92094c8a2f5dc3f7ba6306
         </p>
         <p> New Input! the number of materials you want to donate! Calculate your impact today!</p>
         

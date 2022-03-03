@@ -4,18 +4,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="DISC CFB Calculator">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to the CFB Environmental Calculator. We are DISC NU.
         </p>
+        <p>Input the number of materials you want to donate! Calculate your impact today!</p>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Now
+          Learn more about your impact!
         </a>
       </header>
     </div>

@@ -1,27 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+var slider = document.getElementById("myRange");
+var output = document.getElementById("value");
 
-function App() {
-  return (
-    <div className="App">
-      <header className="DISC CFB Calculator">
-        <p>
-          Welcome to the CFB Environmental Calculator. We are DISC NU.
-        </p>
-        <p> New Input! the number of materials you want to donate! Calculate your impact today!
-          let's see if this works </p>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn more about your impact!
-        </a>
-      </header>
-    </div>
-  );
+output.innerHTML = slider.value;
+slider.oninput = function(){
+    output.innerHTML = this.value;
 }
-
-export default App;

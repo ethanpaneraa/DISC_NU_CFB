@@ -7,6 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#table {
+  display: flex;
+  justify-content: center;
+}
+
+#column1 {
+  margin-right: 15%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -27,10 +36,10 @@ p {
   padding: 0px;
 }
 
-.slideContainer {
+/* .slideContainer {
   margin-left: 20%;
   margin-top: 10%;
-}
+} */
 .slider::after {
   content: "100";
   color: red;

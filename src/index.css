@@ -17,6 +17,7 @@ body {
   padding: 0px;
   font-size: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   color: rgb(0, 60, 255);
 }
@@ -27,9 +28,8 @@ p {
 }
 
 .slideContainer {
-  width: 75%;
-
-  margin-top: 200px;
+  margin-left: 20%;
+  margin-top: 10%;
 }
 .slider::after {
   content: "100";
@@ -52,8 +52,8 @@ p {
 }
 
 .slideContainer1 {
-  margin-right: 100px;
-  margin-top: 300px;
+  margin-left: 20%;
+  margin-top: 5%;
 }
 .slider1::after {
   content: "100";
@@ -72,5 +72,456 @@ p {
 }
 
 .slider1::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+.slideContainer2 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider2.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider2::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider2::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider2::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+
+.slideContainer3 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider3.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider3::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider3::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider3::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+
+
+
+.slideContainer4 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider4.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider4::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider4::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider4::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+.slideContainer5 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider5.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider5::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider5::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider5::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+.slideContainer6 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider6.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider6::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider6::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider6::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+.slideContainer7 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider7.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider7::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider7::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider7::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+.slideContainer8 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider8.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider8::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider8::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider8::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+
+.slideContainer9 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider9.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider9::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider9::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider9::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+
+.slideContainer10 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider10.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider10::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider10::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider10::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+.slideContainer11 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider11.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider11::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider11::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider11::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+.slideContainer12 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider12.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider12::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider12::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider12::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+
+.slideContainer13 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider13.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider13::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider13::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider13::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+.slideContainer14 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider14.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider14::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider14::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider14::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+
+.slideContainer15 {
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.slider15.slider::-webkit-slider-thumb {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider15::after {
+  content: "100";
+  color: red;
+  position: absolute;
+  margin-left: 112px;
+  margin-top: 20px;
+}
+.slider15::before {
+  content: "0";
+  color: red;
+  margin-left: 3px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.slider15::-webkit-slider-thumb {
   cursor: pointer;
 }

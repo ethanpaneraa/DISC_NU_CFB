@@ -18,6 +18,29 @@ body {
   margin-right: 15%;
 }
 
+h1 {
+  text-align: center;
+  color: #011865;
+}
+
+#blurb {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  color: #011865;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#question {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #3CB4AC;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -70,10 +93,6 @@ p {
   cursor: pointer;
 }
 
-.slideContainer1 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider1::after {
   content: "100";
   color: red;
@@ -94,12 +113,6 @@ p {
   cursor: pointer;
 }
 
-
-
-.slideContainer2 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider2.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -126,13 +139,6 @@ p {
   cursor: pointer;
 }
 
-
-
-
-.slideContainer3 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider3.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -159,15 +165,6 @@ p {
   cursor: pointer;
 }
 
-
-
-
-
-
-.slideContainer4 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider4.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -194,12 +191,6 @@ p {
   cursor: pointer;
 }
 
-
-
-.slideContainer5 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider5.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -226,11 +217,6 @@ p {
   cursor: pointer;
 }
 
-
-.slideContainer6 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider6.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -257,11 +243,6 @@ p {
   cursor: pointer;
 }
 
-
-.slideContainer7 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider7.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -288,11 +269,6 @@ p {
   cursor: pointer;
 }
 
-
-.slideContainer8 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider8.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -319,13 +295,6 @@ p {
   cursor: pointer;
 }
 
-
-
-
-.slideContainer9 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider9.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -352,13 +321,6 @@ p {
   cursor: pointer;
 }
 
-
-
-
-.slideContainer10 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider10.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -385,12 +347,6 @@ p {
   cursor: pointer;
 }
 
-
-
-.slideContainer11 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider11.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -417,11 +373,6 @@ p {
   cursor: pointer;
 }
 
-
-.slideContainer12 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider12.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -448,13 +399,6 @@ p {
   cursor: pointer;
 }
 
-
-
-
-.slideContainer13 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider13.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -481,12 +425,6 @@ p {
   cursor: pointer;
 }
 
-
-
-.slideContainer14 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider14.slider::-webkit-slider-thumb {
   content: "100";
   color: red;
@@ -513,12 +451,6 @@ p {
   cursor: pointer;
 }
 
-
-
-.slideContainer15 {
-  margin-left: 20%;
-  margin-top: 5%;
-}
 .slider15.slider::-webkit-slider-thumb {
   content: "100";
   color: red;

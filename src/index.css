@@ -95,7 +95,7 @@ p {
 } */
 .slider::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
@@ -103,7 +103,7 @@ p {
 
 .slider::before {
   content: "0";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 3px;
   margin-top: 20px;
@@ -115,7 +115,7 @@ p {
 
 .slider1::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
@@ -123,7 +123,7 @@ p {
 
 .slider1::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -135,21 +135,21 @@ p {
 
 .slider2.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider2::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider2::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -161,21 +161,21 @@ p {
 
 .slider3.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider3::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider3::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -187,21 +187,21 @@ p {
 
 .slider4.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider4::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider4::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -213,21 +213,21 @@ p {
 
 .slider5.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider5::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider5::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -239,21 +239,21 @@ p {
 
 .slider6.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider6::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider6::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -265,21 +265,21 @@ p {
 
 .slider7.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider7::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider7::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -291,21 +291,21 @@ p {
 
 .slider8.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider8::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider8::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -317,21 +317,21 @@ p {
 
 .slider9.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider9::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider9::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -343,21 +343,21 @@ p {
 
 .slider10.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider10::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider10::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -369,21 +369,21 @@ p {
 
 .slider11.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider11::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider11::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -395,21 +395,21 @@ p {
 
 .slider12.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider12::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider12::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -421,21 +421,21 @@ p {
 
 .slider13.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider13::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider13::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -447,21 +447,21 @@ p {
 
 .slider14.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider14::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider14::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;
@@ -473,21 +473,21 @@ p {
 
 .slider15.slider::-webkit-slider-thumb {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider15::after {
   content: "100";
-  color: red;
+  color: blue;
   position: absolute;
   margin-left: 112px;
   margin-top: 20px;
 }
 .slider15::before {
   content: "0";
-  color: red;
+  color: blue;
   margin-left: 3px;
   margin-top: 20px;
   position: absolute;

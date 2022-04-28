@@ -30,6 +30,11 @@ h1 {
   color: #011865;
 }
 
+new{
+  text-align: center;
+  font-weight: bold;
+}
+
 
 #blurb {
   text-align: center;
@@ -60,6 +65,13 @@ title {
 
 body {
   color: rgb(0, 38, 255);
+}
+
+new{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: 'Recoleta', sans-serif;
+  
 }
 
 body2 {

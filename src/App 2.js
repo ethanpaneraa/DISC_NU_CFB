@@ -1,6 +1,3 @@
-
-
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("value");
 output.innerHTML = slider.value;
@@ -159,4 +156,3 @@ output15.innerHTML = slider15.value;
 slider15.oninput = function(){
     output15.innerHTML = this.value;
 }
-//////////////////////////////////////////////////////////////

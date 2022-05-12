@@ -100,6 +100,14 @@
                                           <input type="range" min="0" max="60" value="50" class="slider" id="ac" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
+                                  <ul>
+									<div id="slidecontainer">
+										<h5 class="title">Dresser</h5>
+		<h5 id="dresserValue"></h1>
+										<input type="range" min="0" max="60" value="50" class="slider" id="dresser" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								  
 			
                               </li>
                           </div>
@@ -161,6 +169,15 @@ val;
 	sliderBlau.oninput = function() {
 	outputBlau.innerHTML = this.value;
 	};
+
+	var sliderDresser = document.getElementById("dresser");
+	var outputDresser = document.getElementById("dresserValue");
+	outputDresser.innerHTML = sliderDresser.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderDresser.oninput = function() {
+	outputDresser.innerHTML = this.value;
+	};
 	
 	
 
@@ -171,7 +188,8 @@ function changeColoursData() {
 		"Gelb": parseInt(sliderGelb.value),
 		"Red": parseInt(sliderRot.value),
 		"Magenta": parseInt(sliderMagenta.value),
-		"Blau": parseInt(sliderBlau.value),		
+		"Blau": parseInt(sliderBlau.value),
+		"Dresser": parseInt(sliderDresser.value)		
 	};
 	return colours;
 	

@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CFB Environmental Calculator &amp; JS</title>
+  <link rel="icon" href="27.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 <html>
     <head>
@@ -36,96 +51,6 @@
     <h2 id="question">What types of furniture would you like to donate?</h2>
     <img src="furniture.jpg" alt="furniture icons">
 
-    
-
-        <div id="table">
-            <div id="column1">
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value = "0" id = "myRange" class = "slider">
-                    <p>Mattress Value: <span id ="value"></span> </p>
-                </div>
-                
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value1 = "0" id = "myRange1" class = "slider1">
-                    <p>Bed Frame Value: <span id ="value1"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value2 = "0" id = "myRange2" class = "slider2">
-                    <p>Sofa Value: <span id ="value2"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value3 = "0" id = "myRange3" class = "slider3">
-                    <p>Loveseat Value: <span id ="value3"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value4 = "0" id = "myRange4" class = "slider4">
-                    <p>Arm Chair Value: <span id ="value4"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value5 = "0" id = "myRange5" class = "slider5">
-                    <p>Dresser Value: <span id ="value5"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value6 = "0" id = "myRange6" class = "slider6">
-                    <p>Side Table Value: <span id ="value6"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value7 = "0" id = "myRange7" class = "slider7">
-                    <p>Coffee Table Value: <span id ="value7"></span> </p>
-                </div>
-            </div>
-
-            <div id="column2">
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value8 = "0" id = "myRange8" class = "slider8">
-                    <p>Kitchen Table Value: <span id ="value8"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value9 = "0" id = "myRange9" class = "slider9">
-                    <p>Kitchen Chair Value: <span id ="value9"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value10 = "0" id = "myRange10" class = "slider10">
-                    <p>Lamps Value: <span id ="value10"></span> </p>
-                </div>
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value11 = "0" id = "myRange11" class = "slider11">
-                    <p>Office Chair Value: <span id ="value11"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value12 = "0" id = "myRange12" class = "slider12">
-                    <p>Rugs Value: <span id ="value12"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value13 = "0" id = "myRange13" class = "slider13">
-                    <p>Bookcase Value: <span id ="value13"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value14 = "0" id = "myRange14" class = "slider14">
-                    <p>Nightstand Value: <span id ="value14"></span> </p>
-                </div>
-
-                <div class ="slideContainer">
-                    <input type = "range" min = "0" max = "100" value15 = "0" id = "myRange15" class = "slider15">
-                    <p>Mirrors Value: <span id ="value15"></span> </p>
-                </div>
-            </div>
-        </div>
-
-
-
-
     </body>
 
     <new>
@@ -133,5 +58,187 @@
 
     </new>
 
-    <script src = "js/main.js"></script>
+<!-- partial:index.partial.html -->
+<div class="content">
+    <canvas id="myCanvas">
+                          
+                      
+                      </canvas>
+    <li>
+      <ul>
+        <div id="slidecontainer">
+          <h5 class="title">Mattress</h5>
+          <h5 id="mattressValue"></h1>
+                                          <input type="range" min="0" max="60" value="30" class="slider" id="mattress" onChange="refreshPiechart();">
+                                      </div>
+                                  </ul>
+                                  <ul>
+                                      <div id="slidecontainer">
+                                          <h5 class="title">Bed Frame</h5>
+          <h5 id="bfValue"></h1>
+                                          <input type="range" min="0" max="60" value="60" class="slider" id="bf" onChange="refreshPiechart();">
+                                      </div>
+                                  </ul>
+                                  <ul>
+                                      <div id="slidecontainer">
+                                          <h5 class="title">Sofa</h5>
+          <h5 id="sofaValue"></h1>
+                                          <input type="range" min="0" max="60" value="40" class="slider" id="sofa" onChange="refreshPiechart();">
+                                      </div>
+                                  </ul>
+                                  <ul>
+                                      <div id="slidecontainer">
+                                          <h5 class="title">Loveseat</h5>
+          <h5 id="lsValue"></h1>
+                                          <input type="range" min="0" max="60" value="60" class="slider" id="ls" onChange="refreshPiechart();">
+                                      </div>
+                                  </ul>
+                                  <ul>
+                                      <div id="slidecontainer">
+                                          <h5 class="title">Arm Chair</h5>
+          <h5 id="acValue"></h1>
+                                          <input type="range" min="0" max="60" value="50" class="slider" id="ac" onChange="refreshPiechart();">
+                                      </div>
+                                  </ul>
+			
+                              </li>
+                          </div>
+                  </div>
+
+	<!-- Make JS Script -->
+    <script>
+        /************** Canvas ***************/
+var myCanvas = document.getElementById("myCanvas");
+myCanvas.width = 500;
+myCanvas.height = 450;
+				
+var ctx = myCanvas.getContext("2d"),
+val;
+
+
+/************** Slider Variables ***************/
+	var sliderGruen = document.getElementById("mattress");
+	var outputGruen = document.getElementById("mattressValue");
+	outputGruen.innerHTML = sliderGruen.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderGruen.oninput = function() {
+	outputGruen.innerHTML = this.value;
+	};
+	
+	var sliderGelb = document.getElementById("bf");
+	var outputGelb = document.getElementById("bfValue");
+	outputGelb.innerHTML = sliderGelb.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderGelb.oninput = function() {
+	outputGelb.innerHTML = this.value;
+	};
+
+	var sliderRot = document.getElementById("sofa");
+	var outputRot = document.getElementById("sofaValue");
+	outputRot.innerHTML = sliderRot.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderRot.oninput = function() {
+	outputRot.innerHTML = this.value;
+	};
+	
+	var sliderMagenta = document.getElementById("ls");
+	var outputMagenta = document.getElementById("lsValue");
+	outputMagenta.innerHTML = sliderMagenta.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderMagenta.oninput = function() {
+			outputMagenta.innerHTML = this.value;
+	};
+		
+	var sliderBlau = document.getElementById("ac");
+	var outputBlau = document.getElementById("acValue");
+	outputBlau.innerHTML = sliderBlau.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderBlau.oninput = function() {
+	outputBlau.innerHTML = this.value;
+	};
+	
+	
+
+/************** Utility Functions ***************/	
+function changeColoursData() {	
+	 var colours = {
+		"Gruen": parseInt(sliderGruen.value),
+		"Gelb": parseInt(sliderGelb.value),
+		"Red": parseInt(sliderRot.value),
+		"Magenta": parseInt(sliderMagenta.value),
+		"Blau": parseInt(sliderBlau.value),		
+	};
+	return colours;
+	
+}
+			
+function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
+		ctx.fillStyle = color;
+		ctx.beginPath();
+		ctx.moveTo(centerX,centerY);
+		ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+		ctx.closePath();
+		ctx.fill();
+}
+
+/************** Piechart Object ***************/
+var Piechart = function(options){
+	this.options = options;
+	this.canvas = options.canvas;
+	this.ctx = this.canvas.getContext("2d");
+	this.colors = options.colors;
+	
+	this.draw = function(){
+		var total_value = 0;
+		var color_index = 0;
+		for(var categ in this.options.data) {
+			val = this.options.data[categ];
+			total_value += val;
+		}
+		
+		var start_angle = 0;
+		for (categ in this.options.data) {
+			val = this.options.data[categ];
+			var slice_angle = 2 * Math.PI * val / total_value;
+			
+			drawPieSlice(
+				this.ctx,
+				this.canvas.width/2,
+				this.canvas.height/2,
+				Math.min(this.canvas.width/2,this.canvas.height/2),
+				start_angle,
+				start_angle+slice_angle,
+				this.colors[color_index%this.colors.length]
+			);
+			
+			start_angle += slice_angle;
+			color_index++;
+		}
+	};
+	
+};
+				
+
+/************** Initialize code and draw pie chart ***************/
+function refreshPiechart(){
+	var myPiechart = new Piechart(
+	{
+		canvas:myCanvas,
+		data: changeColoursData(),
+		colors: ["#9EC2FF", "#7B9FF2", "#4259C3", "#212AA5", "#03018C"]
+				//colours : gruen, gelb, rot, magenta, blau,cyan
+	}
+);
+
+myPiechart.draw();
+	
+}
+
+refreshPiechart();
+    </script>
 </html>

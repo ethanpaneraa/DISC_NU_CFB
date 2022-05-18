@@ -69,42 +69,112 @@
         <div id="slidecontainer">
           <h5 class="title">Mattress</h5>
           <h5 id="mattressValue"></h1>
-                                          <input type="range" min="0" max="60" value="30" class="slider" id="mattress" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="30" class="slider" id="mattress" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Bed Frame</h5>
           <h5 id="bfValue"></h1>
-                                          <input type="range" min="0" max="60" value="60" class="slider" id="bf" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="60" class="slider" id="bf" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Sofa</h5>
           <h5 id="sofaValue"></h1>
-                                          <input type="range" min="0" max="60" value="40" class="slider" id="sofa" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="40" class="slider" id="sofa" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Loveseat</h5>
           <h5 id="lsValue"></h1>
-                                          <input type="range" min="0" max="60" value="60" class="slider" id="ls" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="60" class="slider" id="ls" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Arm Chair</h5>
-          <h5 id="acValue"></h1>
-                                          <input type="range" min="0" max="60" value="50" class="slider" id="ac" onChange="refreshPiechart();">
+											<h5 id="acValue"></h1>
+                                          <input type="range" min="0" max="100" value="50" class="slider" id="ac" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
 									<div id="slidecontainer">
 										<h5 class="title">Dresser</h5>
-		<h5 id="dresserValue"></h1>
-										<input type="range" min="0" max="60" value="50" class="slider" id="dresser" onChange="refreshPiechart();">
+										<h5 id="dresserValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="dresser" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Side Table</h5>
+										<h5 id="sideTableValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="sideTable" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Coffee Table</h5>
+										<h5 id="coffeeTableValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="coffeeTable" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Kitchen Table</h5>
+										<h5 id="kitchenTableValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="kitchenTable" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Kitchen Chair</h5>
+										<h5 id="kitchenChairValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="kitchenChair" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Lamp</h5>
+										<h5 id="lampValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="lamp" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Desk/Office Chair</h5>
+										<h5 id="deskValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="desk" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Rug</h5>
+										<h5 id="rugValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="rug" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Bookcase</h5>
+										<h5 id="bookcaseValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="bookcase" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Nightstand</h5>
+										<h5 id="nightstandValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="nightstand" onChange="refreshPiechart();">
+									</div>
+								</ul>
+								<ul>
+									<div id="slidecontainer">
+										<h5 class="title">Mirror</h5>
+										<h5 id="mirrorValue"></h1>
+										<input type="range" min="0" max="100" value="50" class="slider" id="mirror" onChange="refreshPiechart();">
 									</div>
 								</ul>
 								  
@@ -178,6 +248,33 @@ val;
 	sliderDresser.oninput = function() {
 	outputDresser.innerHTML = this.value;
 	};
+
+	var sliderSideTable = document.getElementById("sideTable");
+	var outputSideTable = document.getElementById("sideTableValue");
+	outputSideTable.innerHTML = sliderSideTable.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderSideTable.oninput = function() {
+	outputSideTable.innerHTML = this.value;
+	};
+
+	var sliderCoffeeTable = document.getElementById("coffeeTable");
+	var outputCoffeeTable = document.getElementById("coffeeTableValue");
+	outputCoffeeTable.innerHTML = sliderCoffeeTable.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderCoffeeTable.oninput = function() {
+	outputCoffeeTable.innerHTML = this.value;
+	};
+
+	var sliderKitchenTable = document.getElementById("kitchenTable");
+	var outputKitchenTable = document.getElementById("kitchenTableValue");
+	outputKitchenTable.innerHTML = sliderKitchenTable.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderKitchenTable.oninput = function() {
+	outputKitchenTable.innerHTML = this.value;
+	};
 	
 	
 
@@ -189,7 +286,9 @@ function changeColoursData() {
 		"Red": parseInt(sliderRot.value),
 		"Magenta": parseInt(sliderMagenta.value),
 		"Blau": parseInt(sliderBlau.value),
-		"Dresser": parseInt(sliderDresser.value)		
+		"Dresser": parseInt(sliderDresser.value),
+		"Side Table": parseInt(sliderSideTable.value),
+		"Coffee Table": parseInt(sliderCoffeeTable.value)		
 	};
 	return colours;
 	

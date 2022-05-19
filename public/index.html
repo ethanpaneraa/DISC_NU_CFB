@@ -65,20 +65,22 @@
                       
                       </canvas>
     <li>
-      <ul>
-        <div id="slidecontainer">
-          <h5 class="title">Mattress</h5>
-          <h5 id="mattressValue"></h1>
+	<div id="table">
+		<div id="column1">
+									<ul>
+										<div id="slidecontainer">
+										<h5 class="title">Mattress</h5>
+										<h5 id="mattressValue"></h1>
                                           <input type="range" min="0" max="100" value="30" class="slider" id="mattress" onChange="refreshPiechart();">
                                       </div>
-                                  </ul>
-                                  <ul>
-                                      <div id="slidecontainer">
-                                          <h5 class="title">Bed Frame</h5>
-          <h5 id="bfValue"></h1>
-                                          <input type="range" min="0" max="100" value="60" class="slider" id="bf" onChange="refreshPiechart();">
-                                      </div>
-                                  </ul>
+                                	</ul>
+									<ul>
+										<div id="slidecontainer">
+											<h5 class="title">Bed Frame</h5>
+			<h5 id="bfValue"></h1>
+											<input type="range" min="0" max="100" value="60" class="slider" id="bf" onChange="refreshPiechart();">
+										</div>
+									</ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Sofa</h5>
@@ -121,6 +123,8 @@
 										<input type="range" min="0" max="100" value="50" class="slider" id="coffeeTable" onChange="refreshPiechart();">
 									</div>
 								</ul>
+		</div>
+		<div id="column2">
 								<ul>
 									<div id="slidecontainer">
 										<h5 class="title">Kitchen Table</h5>
@@ -177,6 +181,8 @@
 										<input type="range" min="0" max="100" value="50" class="slider" id="mirror" onChange="refreshPiechart();">
 									</div>
 								</ul>
+		</div>
+	</div>
 								  
 			
                               </li>
@@ -275,7 +281,69 @@ val;
 	sliderKitchenTable.oninput = function() {
 	outputKitchenTable.innerHTML = this.value;
 	};
+
+	var sliderKitchenChair = document.getElementById("kitchenChair");
+	var outputKitchenChair = document.getElementById("kitchenChairValue");
+	outputKitchenChair.innerHTML = sliderKitchenChair.value; // Display the default slider value
 	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderKitchenChair.oninput = function() {
+	outputKitchenChair.innerHTML = this.value;
+	};
+
+	var sliderLamp = document.getElementById("lamp");
+	var outputLamp = document.getElementById("lampValue");
+	outputLamp.innerHTML = sliderLamp.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderLamp.oninput = function() {
+	outputLamp.innerHTML = this.value;
+	};
+
+	var sliderDeskChair = document.getElementById("desk");
+	var outputDeskChair = document.getElementById("deskValue");
+	outputDeskChair.innerHTML = sliderDeskChair.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderDeskChair.oninput = function() {
+	outputDeskChair.innerHTML = this.value;
+	};
+
+	var sliderRug = document.getElementById("rug");
+	var outputRug = document.getElementById("rugValue");
+	outputRug.innerHTML = sliderRug.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderRug.oninput = function() {
+	outputRug.innerHTML = this.value;
+	};
+
+	var sliderBookcase = document.getElementById("bookcase");
+	var outputBookcase = document.getElementById("bookcaseValue");
+	outputBookcase.innerHTML = sliderBookcase.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderBookcase.oninput = function() {
+	outputBookcase.innerHTML = this.value;
+	};
+	
+	var sliderNightstand = document.getElementById("nightstand");
+	var outputNightstand = document.getElementById("nightstandValue");
+	outputNightstand.innerHTML = sliderNightstand.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderNightstand.oninput = function() {
+	outputNightstand.innerHTML = this.value;
+	};
+
+	var sliderMirror = document.getElementById("mirror");
+	var outputMirror = document.getElementById("mirrorValue");
+	outputMirror.innerHTML = sliderMirror.value; // Display the default slider value
+	
+	// Update the current slider value (each time you drag the slider handle)
+	sliderMirror.oninput = function() {
+	outputMirror.innerHTML = this.value;
+	};
 	
 
 /************** Utility Functions ***************/	
@@ -288,7 +356,15 @@ function changeColoursData() {
 		"Blau": parseInt(sliderBlau.value),
 		"Dresser": parseInt(sliderDresser.value),
 		"Side Table": parseInt(sliderSideTable.value),
-		"Coffee Table": parseInt(sliderCoffeeTable.value)		
+		"Coffee Table": parseInt(sliderCoffeeTable.value),
+		"Kitchen Table": parseInt(sliderKitchenTable.value),
+		"Kitchen Chair": parseInt(sliderKitchenChair.value),
+		"Lamp": parseInt(sliderLamp.value),
+		"Desk Chair": parseInt(sliderDeskChair.value),
+		"Rug": parseInt(sliderRug.value),
+		"Bookcase": parseInt(sliderBookcase.value),
+		"Nightstand": parseInt(sliderNightstand.value),
+		"Mirror": parseInt(sliderMirror.value)						
 	};
 	return colours;
 	

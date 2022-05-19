@@ -21,9 +21,6 @@ img {
   justify-content: center;
 }
 
-#column1 {
-  margin-right: 15%;
-}
 
 h1 {
   text-align: center;
@@ -145,7 +142,6 @@ li {
 
 h5 {
 	float: right;
-	width:45%;
 	display: inline;
   text-align: right;
 }

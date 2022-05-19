@@ -52,6 +52,7 @@ new{
   color: #3CB4AC;
   font-size: 25px;
   margin-bottom: 5%;
+  text-size-adjust: auto;
 }
 
 code {

@@ -20,32 +20,33 @@
         <meta charset = "UTF-8">
         <link rel = "stylesheet" href ="/src/index.css">
         <style>
-            
             h1 {
-                font-family: 'Montserrat';font-size: 22px;
+                font-family: 'Montserrat';font-size: 100px;
             
             }
-
             h2 {
                 font-family: 'Montserrat';font-size: 22px;
             
             }
 
-            .CFB {
+            /**.CFB {
                 position: absolute;
                 top: 35%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-            }
+            }**/
 
         </style>   
-        
-
     </head>
 
     <body>
-
-    <img src="IMG_6687.jpeg" alt="top"> 
+		
+	
+	<div class = "intro-container">
+		<img src="IMG_6687.jpeg" alt="top" style = "width:100%"> 
+		<div class = "welcome"> CFB ENVIRONMENTAL CALCULATOR </div>
+	</div>
+   
     <h2 id="blurb">Using this tool, you are able to calculate the environmental impact of your donations 
         and see the broader effect you are having on your local and global community!</h2>
     <h2 id="question">What types of furniture would you like to donate?</h2>
@@ -53,12 +54,12 @@
 
     </body>
 
-    <new>
+    <!--<new>
         <div class= "Welcome to the CFB Environmental Calculator!">CFB ENVIRONMENTAL CALCULATOR</div>
 
     </new>
 
-<!-- partial:index.partial.html -->
+< partial:index.partial.html -->
 <div class="content">
     <canvas id="myCanvas">
                           
@@ -69,35 +70,35 @@
         <div id="slidecontainer">
           <h5 class="title">Mattress</h5>
           <h5 id="mattressValue"></h1>
-                                          <input type="range" min="0" max="60" value="30" class="slider" id="mattress" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="0" class="slider" id="mattress" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Bed Frame</h5>
           <h5 id="bfValue"></h1>
-                                          <input type="range" min="0" max="60" value="60" class="slider" id="bf" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="0" class="slider" id="bf" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Sofa</h5>
           <h5 id="sofaValue"></h1>
-                                          <input type="range" min="0" max="60" value="40" class="slider" id="sofa" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="0" class="slider" id="sofa" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Loveseat</h5>
           <h5 id="lsValue"></h1>
-                                          <input type="range" min="0" max="60" value="60" class="slider" id="ls" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="0" class="slider" id="ls" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Arm Chair</h5>
           <h5 id="acValue"></h1>
-                                          <input type="range" min="0" max="60" value="50" class="slider" id="ac" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="0" class="slider" id="ac" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
 			

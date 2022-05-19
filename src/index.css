@@ -21,9 +21,6 @@ img {
   justify-content: center;
 }
 
-#column1 {
-  margin-right: 15%;
-}
 
 h1 {
   text-align: center;
@@ -51,8 +48,7 @@ new{
   margin: auto;
   color: #3CB4AC;
   font-size: 25px;
-  margin-bottom: 5%;
-  text-size-adjust: auto;
+  margin-bottom: 1%;
 }
 
 code {
@@ -66,6 +62,22 @@ title {
 
 body {
   color: rgb(0, 38, 255);
+
+}
+
+#header {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  padding-bottom: 25px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  object-fit: cover;
+  background-image: url('/public/IMG_6687.jpeg');
 }
 
 new{
@@ -90,10 +102,7 @@ p {
   padding: 0px;
 }
 
-/* .slideContainer {
-  margin-left: 20%;
-  margin-top: 10%;
-} */
+
 .content {
   width: 100%;
   overflow-y: scroll;
@@ -144,10 +153,11 @@ li {
 
 .title {
 	float: left;
+  text-align: left;
 }
 
 h5 {
 	float: right;
-	width:45%;
 	display: inline;
+  text-align: right;
 }

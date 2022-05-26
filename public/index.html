@@ -2,8 +2,6 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CFB Environmental Calculator &amp; JS</title>
-  <link rel="icon" href="27.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 <html>
+
     <head>
         <meta charset = "UTF-8">
         <link rel = "stylesheet" href ="/src/index.css">
@@ -27,8 +26,7 @@
             }
 
             h2 {
-                font-family: 'Montserrat';font-size: 22pw;
-				text-size-adjust: auto;
+                font-family: 'Montserrat';font-size: 22px;
             
             }
 
@@ -37,11 +35,6 @@
                 top: 35%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-				/*	resize: None; 
-				text-size-adjust: auto;
-                position: fixed;
-				margin-left: auto;
-                margin-right:auto; */
             }
 
         </style>   
@@ -51,12 +44,15 @@
 
     <body>
 
-    <img src="IMG_6687.jpeg" alt="top"> 
-	<div class= "Welcome to the CFB Environmental Calculator!">CFB ENVIRONMENTAL CALCULATOR</div>
+    <div id = "header"> 
+        Welcome to CFB Environmental Calculator
+    </div>
+
+    <!-- <img src="IMG_6687.jpeg" alt="top">  -->
     <h2 id="blurb">Using this tool, you are able to calculate the environmental impact of your donations 
         and see the broader effect you are having on your local and global community!</h2>
     <h2 id="question">What types of furniture would you like to donate?</h2>
-    <img src="furniture.jpg" alt="furniture icons">
+    <!-- <img src="furniture.jpg" alt="furniture icons"> -->
 
     </body>
 
@@ -72,180 +68,728 @@
                       
                       </canvas>
     <li>
-      <ul>
-        <div id="slidecontainer">
-          <h5 class="title">Mattress</h5>
-          <h5 id="mattressValue"></h1>
-                                          <input type="range" min="0" max="100" value="0" class="slider" id="mattress" onChange="refreshPiechart();">
+    <div id="table">
+        <div id="column1">
+                                    <ul>
+                                        <div id="slidecontainer">
+                                        <h5 class="title">Mattress</h5>
+                                        <h5 id="mattressValue"></h1>
+                                          <input type="range" min="0" max="100" value="30" class="slider" id="mattress" onChange="refreshPiechart();">
                                       </div>
-                                  </ul>
-                                  <ul>
-                                      <div id="slidecontainer">
-                                          <h5 class="title">Bed Frame</h5>
-          <h5 id="bfValue"></h1>
-                                          <input type="range" min="0" max="100" value="0" class="slider" id="bf" onChange="refreshPiechart();">
-                                      </div>
-                                  </ul>
+                                    </ul>
+                                    <ul>
+                                        <div id="slidecontainer">
+                                            <h5 class="title">Bed Frame</h5>
+            <h5 id="bfValue"></h1>
+                                            <input type="range" min="0" max="100" value="60" class="slider" id="bf" onChange="refreshPiechart();">
+                                        </div>
+                                    </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Sofa</h5>
           <h5 id="sofaValue"></h1>
-                                          <input type="range" min="0" max="100" value="0" class="slider" id="sofa" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="40" class="slider" id="sofa" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Loveseat</h5>
           <h5 id="lsValue"></h1>
-                                          <input type="range" min="0" max="100" value="0" class="slider" id="ls" onChange="refreshPiechart();">
+                                          <input type="range" min="0" max="100" value="60" class="slider" id="ls" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
                                   <ul>
                                       <div id="slidecontainer">
                                           <h5 class="title">Arm Chair</h5>
-          <h5 id="acValue"></h1>
-                                          <input type="range" min="0" max="100" value="0" class="slider" id="ac" onChange="refreshPiechart();">
+                                            <h5 id="acValue"></h1>
+                                          <input type="range" min="0" max="100" value="50" class="slider" id="ac" onChange="refreshPiechart();">
                                       </div>
                                   </ul>
-			
+                                  <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Dresser</h5>
+                                        <h5 id="dresserValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="dresser" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Side Table</h5>
+                                        <h5 id="sideTableValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="sideTable" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Coffee Table</h5>
+                                        <h5 id="coffeeTableValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="coffeeTable" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+        </div>
+        <div id="column2">
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Kitchen Table</h5>
+                                        <h5 id="kitchenTableValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="kitchenTable" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Kitchen Chair</h5>
+                                        <h5 id="kitchenChairValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="kitchenChair" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Lamp</h5>
+                                        <h5 id="lampValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="lamp" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Desk/Office Chair</h5>
+                                        <h5 id="deskValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="desk" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Rug</h5>
+                                        <h5 id="rugValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="rug" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Bookcase</h5>
+                                        <h5 id="bookcaseValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="bookcase" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Nightstand</h5>
+                                        <h5 id="nightstandValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="nightstand" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+                                <ul>
+                                    <div id="slidecontainer">
+                                        <h5 class="title">Mirror</h5>
+                                        <h5 id="mirrorValue"></h1>
+                                        <input type="range" min="0" max="100" value="50" class="slider" id="mirror" onChange="refreshPiechart();">
+                                    </div>
+                                </ul>
+        </div>
+    </div>
+                                  
+            
                               </li>
                           </div>
                   </div>
 
-	<!-- Make JS Script -->
+    <!-- Make JS Script -->
     <script>
         /************** Canvas ***************/
 var myCanvas = document.getElementById("myCanvas");
 myCanvas.width = 500;
 myCanvas.height = 450;
-				
+                
 var ctx = myCanvas.getContext("2d"),
 val;
 
 
 /************** Slider Variables ***************/
-	var sliderGruen = document.getElementById("mattress");
-	var outputGruen = document.getElementById("mattressValue");
-	outputGruen.innerHTML = sliderGruen.value; // Display the default slider value
-	
-	// Update the current slider value (each time you drag the slider handle)
-	sliderGruen.oninput = function() {
-	outputGruen.innerHTML = this.value;
-	};
-	
-	var sliderGelb = document.getElementById("bf");
-	var outputGelb = document.getElementById("bfValue");
-	outputGelb.innerHTML = sliderGelb.value; // Display the default slider value
-	
-	// Update the current slider value (each time you drag the slider handle)
-	sliderGelb.oninput = function() {
-	outputGelb.innerHTML = this.value;
-	};
 
-	var sliderRot = document.getElementById("sofa");
-	var outputRot = document.getElementById("sofaValue");
-	outputRot.innerHTML = sliderRot.value; // Display the default slider value
-	
-	// Update the current slider value (each time you drag the slider handle)
-	sliderRot.oninput = function() {
-	outputRot.innerHTML = this.value;
-	};
-	
-	var sliderMagenta = document.getElementById("ls");
-	var outputMagenta = document.getElementById("lsValue");
-	outputMagenta.innerHTML = sliderMagenta.value; // Display the default slider value
-	
-	// Update the current slider value (each time you drag the slider handle)
-	sliderMagenta.oninput = function() {
-			outputMagenta.innerHTML = this.value;
-	};
-		
-	var sliderBlau = document.getElementById("ac");
-	var outputBlau = document.getElementById("acValue");
-	outputBlau.innerHTML = sliderBlau.value; // Display the default slider value
-	
-	// Update the current slider value (each time you drag the slider handle)
-	sliderBlau.oninput = function() {
-	outputBlau.innerHTML = this.value;
-	};
-	
-	
+    var sliderGruen = document.getElementById("mattress");
+    var outputGruen = document.getElementById("mattressValue");
+    outputGruen.innerHTML = sliderGruen.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderGruen.oninput = function() {
+    outputGruen.innerHTML = this.value;
+    };
+    
+    var sliderGelb = document.getElementById("bf");
+    var outputGelb = document.getElementById("bfValue");
+    outputGelb.innerHTML = sliderGelb.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderGelb.oninput = function() {
+    outputGelb.innerHTML = this.value;
+    };
 
-/************** Utility Functions ***************/	
-function changeColoursData() {	
-	 var colours = {
-		"Gruen": parseInt(sliderGruen.value),
-		"Gelb": parseInt(sliderGelb.value),
-		"Red": parseInt(sliderRot.value),
-		"Magenta": parseInt(sliderMagenta.value),
-		"Blau": parseInt(sliderBlau.value),		
-	};
-	return colours;
-	
+    var sliderRot = document.getElementById("sofa");
+    var outputRot = document.getElementById("sofaValue");
+    outputRot.innerHTML = sliderRot.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderRot.oninput = function() {
+    outputRot.innerHTML = this.value;
+    };
+    
+    var sliderMagenta = document.getElementById("ls");
+    var outputMagenta = document.getElementById("lsValue");
+    outputMagenta.innerHTML = sliderMagenta.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderMagenta.oninput = function() {
+            outputMagenta.innerHTML = this.value;
+    };
+        
+    var sliderBlau = document.getElementById("ac");
+    var outputBlau = document.getElementById("acValue");
+    outputBlau.innerHTML = sliderBlau.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderBlau.oninput = function() {
+    outputBlau.innerHTML = this.value;
+    };
+
+    var sliderDresser = document.getElementById("dresser");
+    var outputDresser = document.getElementById("dresserValue");
+    outputDresser.innerHTML = sliderDresser.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderDresser.oninput = function() {
+    outputDresser.innerHTML = this.value;
+    };
+
+    var sliderSideTable = document.getElementById("sideTable");
+    var outputSideTable = document.getElementById("sideTableValue");
+    outputSideTable.innerHTML = sliderSideTable.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderSideTable.oninput = function() {
+    outputSideTable.innerHTML = this.value;
+    };
+
+    var sliderCoffeeTable = document.getElementById("coffeeTable");
+    var outputCoffeeTable = document.getElementById("coffeeTableValue");
+    outputCoffeeTable.innerHTML = sliderCoffeeTable.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderCoffeeTable.oninput = function() {
+    outputCoffeeTable.innerHTML = this.value;
+    };
+
+    var sliderKitchenTable = document.getElementById("kitchenTable");
+    var outputKitchenTable = document.getElementById("kitchenTableValue");
+    outputKitchenTable.innerHTML = sliderKitchenTable.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderKitchenTable.oninput = function() {
+    outputKitchenTable.innerHTML = this.value;
+    };
+
+    var sliderKitchenChair = document.getElementById("kitchenChair");
+    var outputKitchenChair = document.getElementById("kitchenChairValue");
+    outputKitchenChair.innerHTML = sliderKitchenChair.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderKitchenChair.oninput = function() {
+    outputKitchenChair.innerHTML = this.value;
+    };
+
+    var sliderLamp = document.getElementById("lamp");
+    var outputLamp = document.getElementById("lampValue");
+    outputLamp.innerHTML = sliderLamp.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderLamp.oninput = function() {
+    outputLamp.innerHTML = this.value;
+    };
+
+    var sliderDeskChair = document.getElementById("desk");
+    var outputDeskChair = document.getElementById("deskValue");
+    outputDeskChair.innerHTML = sliderDeskChair.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderDeskChair.oninput = function() {
+    outputDeskChair.innerHTML = this.value;
+    };
+
+    var sliderRug = document.getElementById("rug");
+    var outputRug = document.getElementById("rugValue");
+    outputRug.innerHTML = sliderRug.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderRug.oninput = function() {
+    outputRug.innerHTML = this.value;
+    };
+
+    var sliderBookcase = document.getElementById("bookcase");
+    var outputBookcase = document.getElementById("bookcaseValue");
+    outputBookcase.innerHTML = sliderBookcase.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderBookcase.oninput = function() {
+    outputBookcase.innerHTML = this.value;
+    };
+    
+    var sliderNightstand = document.getElementById("nightstand");
+    var outputNightstand = document.getElementById("nightstandValue");
+    outputNightstand.innerHTML = sliderNightstand.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderNightstand.oninput = function() {
+    outputNightstand.innerHTML = this.value;
+    };
+
+    var sliderMirror = document.getElementById("mirror");
+    var outputMirror = document.getElementById("mirrorValue");
+    outputMirror.innerHTML = sliderMirror.value; // Display the default slider value
+    
+    // Update the current slider value (each time you drag the slider handle)
+    sliderMirror.oninput = function() {
+    outputMirror.innerHTML = this.value;
+    };
+    
+
+/************** Utility Functions ***************/  
+function changeColoursData() {
+    //write fxns here
+    var mattress_list = [];
+    var dc_list = [];
+    var frame_list = [];
+    var sofa_list = [];
+    var ls_list = [];
+    var ac_list = [];
+    var dresser_list = [];
+    var st_list = [];
+    var ct_list = [];
+    var nightstand_list = [];
+    var kt_list = [];
+    var kc_list = [];
+    var lamp_list = [];
+    var bookcase_list = [];
+    var mirror_list = [];
+    var rug_list = [];
+    var oil_list =[];
+    var elec_list = [];
+    var carbon_list = [];
+    var energy_list = [];
+    var landfill_list = [];
+
+
+    function mattress() {
+        const lbs_carbon = 150*sliderGruen.value
+        const kwh_elec = 17.415*sliderGruen.value
+        const barrels_oil = 0.049275*sliderGruen.value
+        const btu_energy = 0.1635*sliderGruen.value
+        const landfill_space = 0.7725*sliderGruen.value
+        mattress_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return mattress_list
+    }
+        
+    function bed_frame() {
+        a = sliderGelb.value;
+        const lbs_carbon = 100*a
+        const kwh_elec = 46.325*a
+        const barrels_oil = 0.131875*a
+        const btu_energy = 0.13625*a
+        const landfill_space = 0.175*a
+        frame_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return frame_list
+    }
+        
+    function sofa() {
+        a = sliderRot.value;
+        const lbs_carbon = 300*a
+        const kwh_elec = 84.5775*a
+        const barrels_oil = 0.241425*a
+        const btu_energy = 0.040875*a
+        const landfill_space = 1.3875*a
+        sofa_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return sofa_list
+    }
+        
+    function love_seat() {
+        a = sliderMagenta.value;
+        const lbs_carbon = 170*a
+        const kwh_elec = 43.0355*a
+        const barrels_oil = 0.1228675*a
+        const btu_energy = 0.0231625*a
+        const landfill_space = 0.937125*a
+        ls_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return ls_list
+    }
+        
+    function arm_chair() {
+        a = sliderBlau.value;
+        const lbs_carbon = 200*a
+        const kwh_elec = 50.63*a
+        const barrels_oil = 0.14455*a
+        const btu_energy = 0.02725*a
+        const landfill_space = 1.1025*a
+        ac_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return ac_list
+    }
+        
+    function dresser(){
+        a = sliderDresser.value;
+        const lbs_carbon = 200*a
+        const kwh_elec = 125.77*a
+        const barrels_oil = 0.359*a
+        const btu_energy = 0.0545*a
+        const landfill_space = 0.42*a
+        dresser_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return dresser_list
+    }
+        
+    function side_table(){
+        a = sliderSideTable.value; 
+        const lbs_carbon = 100*a
+        const kwh_elec = 62.885*a
+        const barrels_oil = 0.1795*a
+        const btu_energy = 0.02725*a
+        const landfill_space = 0.21*a
+        st_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return st_list
+    }
+        
+    function coffee_table() {
+        a = sliderCoffeeTable.value;
+        const lbs_carbon = 150*a
+        const kwh_elec = 68.325*a
+        const barrels_oil = 0.19486875*a
+        const btu_energy = 0.087105*a
+        const landfill_space = 0.25125*a
+        ct_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return ct_list
+    }
+        
+    function nightstand(){
+        a = sliderNightstand.value;
+        const lbs_carbon = 100*a
+        const kwh_elec = 62.885*a
+        const barrels_oil = 0.1795*a
+        const btu_energy = 0.02725*a
+        const landfill_space = 0.21*a
+        nightstand_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return nightstand_list
+    }
+        
+    function kitchen_table(){
+        a = sliderKitchenTable.value;
+        const lbs_carbon = 100*a
+        const kwh_elec = 52.355*a
+        const barrels_oil = 0.1493875*a
+        const btu_energy = 0.0435525*a
+        const landfill_space = 0.185*a
+        kt_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return kt_list
+    }
+        
+    function kitchen_chair(){
+        a = sliderKitchenChair.value;
+        const lbs_carbon = 30*a
+        const kwh_elec = 14.09925*a
+        const barrels_oil = 0.04018875*a
+        const btu_energy = 0.02479275*a
+        const landfill_space = 0.051*a
+        kc_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return kc_list
+    }
+        
+    function lamp(){
+        a = sliderLamp.value;
+        const lbs_carbon = 20*a
+        const kwh_elec = 2.2785*a
+        const barrels_oil = 0.00639*a
+        const btu_energy = 0.0386855*a
+        const landfill_space = 0.0155*a
+        lamp_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return lamp_list
+    }
+        
+    function mirror(){
+        a = sliderMirror.value; 
+        const lbs_carbon = 130*a
+        const kwh_elec = 30.65725*a
+        const barrels_oil = 0.08727875*a
+        const btu_energy = 0.0978445*a
+        const landfill_space = 0.13975*a
+        mirror_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return mirror_list
+    }
+        
+    function rug(){
+        a = sliderRug.value; 
+        const lbs_carbon = 200*a
+        const kwh_elec = 7.335*a
+        const barrels_oil = 0.020775*a
+        const btu_energy = 0*a
+        const landfill_space = 0.425*a
+        rug_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return rug_list
+    }
+        
+    function bookcase(){
+        a = sliderBookcase.value; 
+        const lbs_carbon = 150*a
+        const kwh_elec = 88.66125*a
+        const barrels_oil = 0.25306875*a
+        const btu_energy = 0.04221375*a
+        const landfill_space = 0.3*a
+        bookcase_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return bookcase_list
+    }
+        
+    function desk_chair(){
+        a = sliderDeskChair.value;
+        const lbs_carbon = 70*a
+        const kwh_elec = 24.33025*a
+        const barrels_oil = 0.069335*a
+        const btu_energy = 0.048937*a
+        const landfill_space = 0.091*a
+        dc_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+        return dc_list
+    }
+        
+    function carbon_total(){
+        var carbon_list = [mattress()[0], 
+        bed_frame()[0], 
+        sofa()[0], 
+        love_seat()[0],
+        arm_chair()[0], 
+        dresser()[0],
+        side_table()[0],
+        coffee_table()[0],
+        nightstand()[0],
+        kitchen_table()[0],
+        kitchen_chair()[0],
+        lamp()[0],
+        mirror()[0],
+        rug()[0],
+        bookcase()[0],
+        desk_chair()[0]]
+        let sum = 0;
+        for (let i = 0; i < carbon_list.length; i++) {
+            sum += carbon_list[i];
+        }
+        return sum;
+    }
+        
+    function elec_total(){
+        var elec_list = [mattress()[1], 
+        bed_frame()[1], 
+        sofa()[1], 
+        love_seat()[1],
+        arm_chair()[1], 
+        dresser()[1],
+        side_table()[1],
+        coffee_table()[1],
+        nightstand()[1],
+        kitchen_table()[1],
+        kitchen_chair()[1],
+        lamp()[1],
+        mirror()[1],
+        rug()[1],
+        bookcase()[1],
+        desk_chair()[1]]
+        let sum = 0;
+        for (let i = 0; i < elec_list.length; i++) {
+            sum += elec_list[i];
+        }
+        return sum;
+    }
+
+    function oil_total(){
+        var oil_list = [mattress()[2], 
+        bed_frame()[2], 
+        sofa()[2], 
+        love_seat()[2],
+        arm_chair()[2], 
+        dresser()[2],
+        side_table()[2],
+        coffee_table()[2],
+        nightstand()[2],
+        kitchen_table()[2],
+        kitchen_chair()[2],
+        lamp()[2],
+        mirror()[2],
+        rug()[2],
+        bookcase()[2],
+        desk_chair()[2]]
+        let sum = 0;
+        for (let i = 0; i < oil_list.length; i++) {
+            sum += oil_list[i];
+        }
+        return sum;
+    }
+    
+    function energy_total(){
+        var energy_list = [mattress()[3], 
+        bed_frame()[3], 
+        sofa()[3], 
+        love_seat()[3],
+        arm_chair()[3], 
+        dresser()[3],
+        side_table()[3],
+        coffee_table()[3],
+        nightstand()[3],
+        kitchen_table()[3],
+        kitchen_chair()[3],
+        lamp()[3],
+        mirror()[3],
+        rug()[3],
+        bookcase()[3],
+        desk_chair()[3]]
+        let sum = 0;
+        for (let i = 0; i < energy_list.length; i++) {
+            sum += energy_list[i];
+        }
+        return sum;
+    }
+
+    function landfill_total(){
+        var landfill_list = [mattress()[4], 
+        bed_frame()[4], 
+        sofa()[4], 
+        love_seat()[4],
+        arm_chair()[4], 
+        dresser()[4],
+        side_table()[4],
+        coffee_table()[4],
+        nightstand()[4],
+        kitchen_table()[4],
+        kitchen_chair()[4],
+        lamp()[4],
+        mirror()[4],
+        rug()[4],
+        bookcase()[4],
+        desk_chair()[4]]
+        let sum = 0;
+        for (let i = 0; i < landfill_list.length; i++) {
+            sum += landfill_list[i];
+        }
+        return sum;
+    }
+
+    // function returnZero() {
+    //  return 0;
+    // }
+
+    let landfillTotal = landfill_total();
+    let carbonTotal = carbon_total();
+    let elecTotal = elec_total();
+    let oilTotal = oil_total();
+    let energyTotal = energy_total();
+
+    
+
+    let sumTotal = landfillTotal + carbonTotal + elecTotal + oilTotal+ energyTotal;
+    
+    // function landfillRatio(){
+    //  return landfillTotal/sumTotal;
+    // }
+    // function carbonRatio(){
+    //  return carbonTotal/sumTotal;
+    // }
+    // function elecRatio(){
+    //  return elecTotal/sumTotal;
+    // }
+    // function oilRatio(){
+    //  return oilTotal/sumTotal;
+    // }
+    // function energyRatio(){
+    //  return energyTotal/sumTotal;
+    // }
+    //const landfillRatio = landfillTotal/sumTotal;
+    //const carbonRatio = carbonTotal/sumTotal;
+    //const elecRatio = elecTotal/sumTotal;
+    //const oilRatio = oilTotal/sumTotal;
+    // const energyRatio = energyTotal/sumTotal;
+
+    // const myVariable= the result of some calc
+     var colours = {
+        "Carbon": parseInt(carbonRatio),
+        "Elec": parseInt(elecRatio),
+        "Oil": parseInt(oilRatio),
+        "Energy": parseInt(energyRatio),
+        "Landfill": parseInt(landfillRatio),                        
+    };
+    return colours;
+    
 }
-			
+            
 function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
-		ctx.fillStyle = color;
-		ctx.beginPath();
-		ctx.moveTo(centerX,centerY);
-		ctx.arc(centerX, centerY, radius, startAngle, endAngle);
-		ctx.closePath();
-		ctx.fill();
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(centerX,centerY);
+        ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+        ctx.closePath();
+        ctx.fill();
 }
-
+// just adding this
 /************** Piechart Object ***************/
 var Piechart = function(options){
-	this.options = options;
-	this.canvas = options.canvas;
-	this.ctx = this.canvas.getContext("2d");
-	this.colors = options.colors;
-	
-	this.draw = function(){
-		var total_value = 0;
-		var color_index = 0;
-		for(var categ in this.options.data) {
-			val = this.options.data[categ];
-			total_value += val;
-		}
-		
-		var start_angle = 0;
-		for (categ in this.options.data) {
-			val = this.options.data[categ];
-			var slice_angle = 2 * Math.PI * val / total_value;
-			
-			drawPieSlice(
-				this.ctx,
-				this.canvas.width/2,
-				this.canvas.height/2,
-				Math.min(this.canvas.width/2,this.canvas.height/2),
-				start_angle,
-				start_angle+slice_angle,
-				this.colors[color_index%this.colors.length]
-			);
-			
-			start_angle += slice_angle;
-			color_index++;
-		}
-	};
-	
+    this.options = options;
+    this.canvas = options.canvas;
+    this.ctx = this.canvas.getContext("2d");
+    this.colors = options.colors;
+    
+    this.draw = function(){
+        var total_value = 0;
+        var color_index = 0;
+        for(var categ in this.options.data) {
+            val = this.options.data[categ];
+            total_value += val;
+        }
+        
+        var start_angle = 0;
+        for (categ in this.options.data) {
+            val = this.options.data[categ];
+            var slice_angle = 2 * Math.PI * val / total_value;
+            
+            drawPieSlice(
+                this.ctx,
+                this.canvas.width/2,
+                this.canvas.height/2,
+                Math.min(this.canvas.width/2,this.canvas.height/2),
+                start_angle,
+                start_angle+slice_angle,
+                this.colors[color_index%this.colors.length]
+            );
+            
+            start_angle += slice_angle;
+            color_index++;
+        }
+    };
+    
 };
-				
+    
 
 /************** Initialize code and draw pie chart ***************/
 function refreshPiechart(){
-	var myPiechart = new Piechart(
-	{
-		canvas:myCanvas,
-		data: changeColoursData(),
-		colors: ["#9EC2FF", "#7B9FF2", "#4259C3", "#212AA5", "#03018C"]
-				//colours : gruen, gelb, rot, magenta, blau,cyan
-	}
+    var myPiechart = new Piechart(
+    {
+        canvas:myCanvas,
+        data: changeColoursData(),
+        colors: ["#408ca6", "#35758b", "#2b5d6f", "#204653", "#152f37", "#0b171c"]
+    }
 );
 
 myPiechart.draw();
-	
+    
 }
 
 refreshPiechart();
     </script>
+</html>
+
+
+
+<html>
+    <body>
+        <p id ="slidercontainer" onclick = "mattress()[0]">
+        
+        </p>
+
+    </body>
 </html>

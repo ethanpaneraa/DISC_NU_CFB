@@ -203,7 +203,6 @@ myCanvas.height = 450;
 var ctx = myCanvas.getContext("2d"),
 val;
 
-
 /************** Slider Variables ***************/
 	var sliderGruen = document.getElementById("mattress");
 	var outputGruen = document.getElementById("mattressValue");
@@ -351,26 +350,370 @@ val;
 	
 
 /************** Utility Functions ***************/	
-function changeColoursData() {	
+
+
+function changeColoursData() {
+	var mattress_list = [];
+	var dc_list = [];
+	var frame_list = [];
+	var sofa_list = [];
+	var ls_list = [];
+	var ac_list = [];
+	var dresser_list = [];
+	var st_list = [];
+	var ct_list = [];
+	var nightstand_list = [];
+	var kt_list = [];
+	var kc_list = [];
+	var lamp_list = [];
+	var bookcase_list = [];
+	var mirror_list = [];
+	var rug_list = [];
+	var oil_list =[];
+	var elec_list = [];
+	var carbon_list = [];
+	var energy_list = [];
+	var landfill_list = [];
+
+
+	function mattress() {
+		const lbs_carbon = 150*sliderGruen.value
+		const kwh_elec = 17.415*sliderGruen.value
+		const barrels_oil = 0.049275*sliderGruen.value
+		const btu_energy = 0.1635*sliderGruen.value
+		const landfill_space = 0.7725*sliderGruen.value
+		mattress_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return mattress_list
+	}
+		
+	function bed_frame() {
+		var a = sliderGelb.value;
+		const lbs_carbon = 100*a
+		const kwh_elec = 46.325*a
+		const barrels_oil = 0.131875*a
+		const btu_energy = 0.13625*a
+		const landfill_space = 0.175*a
+		frame_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return frame_list
+	}
+	function sofa() {
+		var a = sliderRot.value;
+		const lbs_carbon = 300*a
+		const kwh_elec = 84.5775*a
+		const barrels_oil = 0.241425*a
+		const btu_energy = 0.040875*a
+		const landfill_space = 1.3875*a
+		sofa_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return sofa_list
+	}
+	function love_seat() {
+		var a = sliderMagenta.value;
+		const lbs_carbon = 170*a
+		const kwh_elec = 43.0355*a
+		const barrels_oil = 0.1228675*a
+		const btu_energy = 0.0231625*a
+		const landfill_space = 0.937125*a
+		ls_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return ls_list
+	}	
+	function arm_chair() {
+		var a = sliderBlau.value;
+		const lbs_carbon = 200*a
+		const kwh_elec = 50.63*a
+		const barrels_oil = 0.14455*a
+		const btu_energy = 0.02725*a
+		const landfill_space = 1.1025*a
+		ac_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return ac_list
+	}
+	function dresser(){
+		var a = sliderDresser.value;
+		const lbs_carbon = 200*a
+		const kwh_elec = 125.77*a
+		const barrels_oil = 0.359*a
+		const btu_energy = 0.0545*a
+		const landfill_space = 0.42*a
+		dresser_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return dresser_list
+	}
+		
+	function side_table(){
+		var a = sliderSideTable.value; 
+		const lbs_carbon = 100*a
+		const kwh_elec = 62.885*a
+		const barrels_oil = 0.1795*a
+		const btu_energy = 0.02725*a
+		const landfill_space = 0.21*a
+		st_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return st_list
+	}
+		
+	function coffee_table() {
+		var a = sliderCoffeeTable.value;
+		const lbs_carbon = 150*a
+		const kwh_elec = 68.325*a
+		const barrels_oil = 0.19486875*a
+		const btu_energy = 0.087105*a
+		const landfill_space = 0.25125*a
+		ct_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return ct_list
+	}
+		
+	function nightstand(){
+		var a = sliderNightstand.value;
+		const lbs_carbon = 100*a
+		const kwh_elec = 62.885*a
+		const barrels_oil = 0.1795*a
+		const btu_energy = 0.02725*a
+		const landfill_space = 0.21*a
+		nightstand_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return nightstand_list
+	}
+		
+	function kitchen_table(){
+		var a = sliderKitchenTable.value;
+		const lbs_carbon = 100*a
+		const kwh_elec = 52.355*a
+		const barrels_oil = 0.1493875*a
+		const btu_energy = 0.0435525*a
+		const landfill_space = 0.185*a
+		kt_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return kt_list
+	}
+		
+	function kitchen_chair(){
+		var a = sliderKitchenChair.value;
+		const lbs_carbon = 30*a
+		const kwh_elec = 14.09925*a
+		const barrels_oil = 0.04018875*a
+		const btu_energy = 0.02479275*a
+		const landfill_space = 0.051*a
+		kc_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return kc_list
+	}
+		
+	function lamp(){
+		var a = sliderLamp.value;
+		const lbs_carbon = 20*a
+		const kwh_elec = 2.2785*a
+		const barrels_oil = 0.00639*a
+		const btu_energy = 0.0386855*a
+		const landfill_space = 0.0155*a
+		lamp_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return lamp_list
+	}
+		
+	function mirror(){
+		var a = sliderMirror.value; 
+		const lbs_carbon = 130*a
+		const kwh_elec = 30.65725*a
+		const barrels_oil = 0.08727875*a
+		const btu_energy = 0.0978445*a
+		const landfill_space = 0.13975*a
+		mirror_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return mirror_list
+	}
+		
+	function rug(){
+		var a = sliderRug.value; 
+		const lbs_carbon = 200*a
+		const kwh_elec = 7.335*a
+		const barrels_oil = 0.020775*a
+		const btu_energy = 0*a
+		const landfill_space = 0.425*a
+		rug_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return rug_list
+	}
+		
+	function bookcase(){
+		a = sliderBookcase.value; 
+		const lbs_carbon = 150*a
+		const kwh_elec = 88.66125*a
+		const barrels_oil = 0.25306875*a
+		const btu_energy = 0.04221375*a
+		const landfill_space = 0.3*a
+		bookcase_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return bookcase_list
+	}
+		
+	function desk_chair(){
+		a = sliderDeskChair.value;
+		const lbs_carbon = 70*a
+		const kwh_elec = 24.33025*a
+		const barrels_oil = 0.069335*a
+		const btu_energy = 0.048937*a
+		const landfill_space = 0.091*a
+		dc_list.push(lbs_carbon, kwh_elec, barrels_oil, btu_energy, landfill_space);
+		return dc_list
+	}
+		
+	function carbon_total(){
+		var carbon_list = [mattress()[0], 
+		bed_frame()[0], 
+		sofa()[0], 
+		love_seat()[0],
+		arm_chair()[0], 
+		dresser()[0],
+		side_table()[0],
+		coffee_table()[0],
+		nightstand()[0],
+		kitchen_table()[0],
+		kitchen_chair()[0],
+		lamp()[0],
+		mirror()[0],
+		rug()[0],
+		bookcase()[0],
+		desk_chair()[0]]
+		let sum = 0;
+		for (let i = 0; i < carbon_list.length; i++) {
+			sum += carbon_list[i];
+		}
+		return Math.log10(sum);
+	}
+		
+	function elec_total(){
+		var elec_list = [mattress()[1], 
+		bed_frame()[1], 
+		sofa()[1], 
+		love_seat()[1],
+		arm_chair()[1], 
+		dresser()[1],
+		side_table()[1],
+		coffee_table()[1],
+		nightstand()[1],
+		kitchen_table()[1],
+		kitchen_chair()[1],
+		lamp()[1],
+		mirror()[1],
+		rug()[1],
+		bookcase()[1],
+		desk_chair()[1]]
+		let sum = 0;
+		for (let i = 0; i < elec_list.length; i++) {
+			sum += elec_list[i];
+		}
+		return Math.log10(sum);
+	}
+
+	function oil_total(){
+		var oil_list = [mattress()[2], 
+		bed_frame()[2], 
+		sofa()[2], 
+		love_seat()[2],
+		arm_chair()[2], 
+		dresser()[2],
+		side_table()[2],
+		coffee_table()[2],
+		nightstand()[2],
+		kitchen_table()[2],
+		kitchen_chair()[2],
+		lamp()[2],
+		mirror()[2],
+		rug()[2],
+		bookcase()[2],
+		desk_chair()[2]]
+		let sum = 0;
+		for (let i = 0; i < oil_list.length; i++) {
+			sum += oil_list[i];
+		}
+		return Math.log10(sum);
+	}
+	
+	function energy_total(){
+		var energy_list = [mattress()[3], 
+		bed_frame()[3], 
+		sofa()[3], 
+		love_seat()[3],
+		arm_chair()[3], 
+		dresser()[3],
+		side_table()[3],
+		coffee_table()[3],
+		nightstand()[3],
+		kitchen_table()[3],
+		kitchen_chair()[3],
+		lamp()[3],
+		mirror()[3],
+		rug()[3],
+		bookcase()[3],
+		desk_chair()[3]]
+		let sum = 0;
+		for (let i = 0; i < energy_list.length; i++) {
+			sum += energy_list[i];
+		}
+		return Math.log10(sum);
+	}
+
+	function landfill_total(){
+		var landfill_list = [mattress()[4], 
+		bed_frame()[4], 
+		sofa()[4], 
+		love_seat()[4],
+		arm_chair()[4], 
+		dresser()[4],
+		side_table()[4],
+		coffee_table()[4],
+		nightstand()[4],
+		kitchen_table()[4],
+		kitchen_chair()[4],
+		lamp()[4],
+		mirror()[4],
+		rug()[4],
+		bookcase()[4],
+		desk_chair()[4]]
+		let sum = 0;
+		for (let i = 0; i < landfill_list.length; i++) {
+			sum = sum + landfill_list[i];
+		}
+		return Math.log10(sum);
+	}
+
+	// function returnZero() {
+	// 	return 0;
+	// }
+
+	let landfillTotal = landfill_total();
+	let carbonTotal = carbon_total();
+	let elecTotal = elec_total();
+	let oilTotal = oil_total();
+	let energyTotal = energy_total();
+
+	let sumTotal = landfillTotal + carbonTotal + elecTotal + oilTotal+ energyTotal;
+	
+	function landfillRatio(){
+		return (landfillTotal/sumTotal);
+	}
+	function carbonRatio(){
+		return (carbonTotal/sumTotal);
+	}
+	function elecRatio(){
+		return (elecTotal/sumTotal);
+	}
+	function oilRatio(){
+		return (oilTotal/sumTotal);
+	}
+	function energyRatio(){
+		return (energyTotal/sumTotal);
+	}
+
+	//const landfillRatio = landfillTotal/sumTotal;
+	//const carbonRatio = carbonTotal/sumTotal;
+	//const elecRatio = elecTotal/sumTotal;
+	//const oilRatio = oilTotal/sumTotal;
+	// const energyRatio = energyTotal/sumTotal;
+
+	// const myVariable= the result of some calc
+
+	console.log(Math.log10(landfillTotal/sumTotal))
+
 	 var colours = {
-		"Gruen": parseInt(sliderGruen.value),
-		"Gelb": parseInt(sliderGelb.value),
-		"Red": parseInt(sliderRot.value),
-		"Magenta": parseInt(sliderMagenta.value),
-		"Blau": parseInt(sliderBlau.value),
-		"Dresser": parseInt(sliderDresser.value),
-		"Side Table": parseInt(sliderSideTable.value),
-		"Coffee Table": parseInt(sliderCoffeeTable.value),
-		"Kitchen Table": parseInt(sliderKitchenTable.value),
-		"Kitchen Chair": parseInt(sliderKitchenChair.value),
-		"Lamp": parseInt(sliderLamp.value),
-		"Desk Chair": parseInt(sliderDeskChair.value),
-		"Rug": parseInt(sliderRug.value),
-		"Bookcase": parseInt(sliderBookcase.value),
-		"Nightstand": parseInt(sliderNightstand.value),
-		"Mirror": parseInt(sliderMirror.value)						
+		"Carbon": carbonRatio(),
+		"Elec": (elecRatio()),
+		"Oil": (oilRatio()),
+		"Energy": (energyRatio()),
+		"Landfill": (landfillRatio()),						
 	};
 	return colours;
+	
 	
 }
 			
@@ -382,6 +725,7 @@ function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color 
 		ctx.closePath();
 		ctx.fill();
 }
+
 // just adding this
 /************** Piechart Object ***************/
 var Piechart = function(options){
@@ -410,25 +754,29 @@ var Piechart = function(options){
 				Math.min(this.canvas.width/2,this.canvas.height/2),
 				start_angle,
 				start_angle+slice_angle,
-				this.colors[color_index%this.colors.length]
+				this.colors[color_index%this.colors.length],
+				this.ctx.font  = "35px Arial",
+				this.ctx.fillText("CO2", 100,200),
+				this.ctx.fillText("Elec", 200,200),
+				this.ctx.fillText("Oil", 250,200),
+				this.ctx.fillText("Energy", 300,200),
+				this.ctx.fillText("Landfill", 350,200)
+
 			);
-			
 			start_angle += slice_angle;
 			color_index++;
 		}
 	};
 	
 };
-				
-
+	
 /************** Initialize code and draw pie chart ***************/
 function refreshPiechart(){
 	var myPiechart = new Piechart(
 	{
 		canvas:myCanvas,
 		data: changeColoursData(),
-		colors: ["#9EC2FF", "#7B9FF2", "#4259C3", "#212AA5", "#03018C"]
-				//colours : gruen, gelb, rot, magenta, blau,cyan
+		colors: ["#FF0000", "#0000CC", "#FF00FF", "#00FF00", "#FFFFCC"]
 	}
 );
 
@@ -438,4 +786,6 @@ myPiechart.draw();
 
 refreshPiechart();
     </script>
+
 </html>
+

@@ -9,6 +9,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #table {
   display: flex;
@@ -16,13 +22,34 @@ body {
 }
 
 
+h1 {
+  text-align: center;
+  color: #011865;
+}
 
-/* new{
+new{
   text-align: center;
   font-weight: bold;
 }
- */
 
+
+#blurb {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  color: #011865;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#question {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #3CB4AC;
+  font-size: 25px;
+  margin-bottom: 1%;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -34,11 +61,11 @@ title {
 }
 
 body {
-  color: #011865;
+  color: rgb(0, 38, 255);
 
 }
 
-/* #header {
+#header {
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -51,16 +78,16 @@ body {
   font-family: sans-serif;
   object-fit: cover;
   background-image: url('/public/IMG_6687.jpeg');
-} */
+}
 
-/* new{
+new{
   color: rgb(255, 255, 255);
   font-size: 50px;
   font-family: 'Recoleta', sans-serif;
   
-} */
+}
 
-/* body2 {
+body2 {
   margin: 0px;
   padding: 0px;
   font-size: 1rem;
@@ -68,7 +95,7 @@ body {
   flex-direction: column;
   justify-content: center;
   color: rgb(238, 74, 74);
-} */
+}
 
 p {
   margin-top: 20px;

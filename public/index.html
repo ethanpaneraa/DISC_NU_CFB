@@ -16,51 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <link rel = "stylesheet" href ="/src/index.css">
-        <style>
-            
-            h1 {
-                font-family: 'Montserrat';font-size: 22px;
-            
-            }
+ 
 
-            h2 {
-                font-family: 'Montserrat';font-size: 22px;
-            
-            }
-
-            .CFB {
-                position: absolute;
-                top: 35%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-        </style>   
-        
-
-    </head>
-
-    <body>
-
-	<div id = "header"> 
-		Welcome to CFB Environmental Calculator
-	</div>
-
-    <!-- <img src="IMG_6687.jpeg" alt="top">  -->
-    <h2 id="blurb">Using this tool, you are able to calculate the environmental impact of your donations 
-        and see the broader effect you are having on your local and global community!</h2>
-    <h2 id="question">What types of furniture would you like to donate?</h2>
-    <!-- <img src="furniture.jpg" alt="furniture icons"> -->
-
-    </body>
-
-    <!-- <new>
-        <div class= "Welcome to the CFB Environmental Calculator!">CFB ENVIRONMENTAL CALCULATOR</div>
-
-    </new> -->
 
 <!-- partial:index.partial.html -->
 <div class="content">
@@ -755,13 +712,13 @@ var Piechart = function(options){
 				start_angle,
 				start_angle+slice_angle,
 				this.colors[color_index%this.colors.length],
-				this.ctx.font  = "35px Arial",
-				this.ctx.fillText("CO2", 100,200),
-				this.ctx.fillText("Elec", 200,200),
-				this.ctx.fillText("Oil", 250,200),
-				this.ctx.fillText("Energy", 300,200),
-				this.ctx.fillText("Landfill", 350,200)
-
+				this.ctx.font  = "20px Arial",
+				this.ctx.fillStyle = "white",
+				this.ctx.fillText("CO2 (lbs)", 50,275),
+				this.ctx.fillText("Elec (kWh)", 100,100),
+				this.ctx.fillText("Barrels of Oil", 250,100),
+				this.ctx.fillText("BTU's of Energy (million)", 250,200), 
+				this.ctx.fillText("Cubic Yards of Landfill Space", 200,300),
 			);
 			start_angle += slice_angle;
 			color_index++;
@@ -776,7 +733,7 @@ function refreshPiechart(){
 	{
 		canvas:myCanvas,
 		data: changeColoursData(),
-		colors: ["#FF0000", "#0000CC", "#FF00FF", "#00FF00", "#FFFFCC"]
+		colors: ["#03151b", "#052a36", "#083f50", "#0a546b", "#139dc8"]
 	}
 );
 

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+}
+
+
+h1 {
+  text-align: center;
+  color: #011865;
+}
+
+new{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#blurb {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  color: #011865;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#question {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  color: #3CB4AC;
+  font-size: 25px;
+  margin-bottom: 1%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: rgb(0, 38, 255);
+
+}
+
+#header {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding-bottom: 25px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  object-fit: cover;
+  background-image: url('/public/IMG_6687.jpeg');
+}
+
+new{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: 'Recoleta', sans-serif;
+  
+}
+
+body2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(238, 74, 74);
+}
+
+p {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+
+.content {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: grey;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: solid black 0.15em;
+    border-radius: 50%;
+		background: #FAF6EB;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+		background: #FAF6EB;
+    cursor: pointer;
+}
+
+ul {
+  width: 80%;
+}
+
+li {
+	list-style: none;
+}
+
+.title {
+	float: left;
+  text-align: left;
+}
+
+h5 {
+	float: right;
+	display: inline;
+  text-align: right;
+}

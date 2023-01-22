@@ -13,11 +13,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run deploy",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +39,6 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  }
+  },
+  "homepage": "http://ethanpaneraa.github.io/DISC_NU_CFB"
 }
